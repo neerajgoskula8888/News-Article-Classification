@@ -1,53 +1,55 @@
-# News-Article-Classification
-Applied NLP techniques to classify news articles using TF-IDF features. Trained and evaluated multiple classifiers and explored topic modeling to uncover hidden themes—essentially teaching the model to tell sports from politics without reading the whole newspaper.
-
 📰 News Article Classification & Topic Modeling
-Introduction
 
-With the growing volume of digital news, manually organizing articles into categories is no longer practical. This project applies Natural Language Processing (NLP) techniques to automatically classify news articles and uncover underlying themes within large text corpora.
+A Natural Language Processing Project
 
-In simple terms, the goal was to teach a machine learning model to tell politics from sports and technology—without having to read the entire newspaper every morning.
+📌 Overview
 
-Problem Statement
+With the rapid growth of digital media, manually organizing news articles into categories has become impractical. This project applies Natural Language Processing (NLP) techniques to automatically classify news articles and uncover hidden thematic structures within large text corpora.
 
-The objective of this project is to:
+In simple terms, the model learns to tell politics from sports and technology—without having to read the entire newspaper every morning.
 
-Classify news articles into predefined categories
+🎯 Objectives
 
-Identify hidden themes within the text using topic modeling
+Automatically classify news articles into predefined categories
 
-Compare multiple machine learning models for text classification
+Extract latent topics to understand underlying themes in the data
 
-Dataset
+Compare multiple machine learning models for text classification performance
 
-The dataset consists of thousands of news articles spanning multiple categories. Each article includes raw text and an associated label, making it suitable for both supervised classification and unsupervised topic discovery tasks.
+📊 Dataset
 
-Methodology
-Text Preprocessing
+The dataset consists of thousands of news articles spanning multiple domains. Each article includes raw textual content and a corresponding label, making it suitable for both supervised classification and unsupervised topic modeling tasks.
 
-Text cleaning and normalization
+🧠 Methodology
+🔹 Text Preprocessing
+
+Text normalization and cleaning
 
 Stopword removal
 
 Tokenization
 
-Feature Engineering
+🔹 Feature Engineering
 
-TF-IDF vectorization to capture word importance across documents
+TF-IDF vectorization to capture term importance across documents
 
-Model Training
+🔹 Model Training
+
+The following models were trained and evaluated:
 
 Logistic Regression
 
 Naive Bayes
 
-Support Vector Machines
+Support Vector Machines (SVM)
 
-Topic Modeling
+🔹 Topic Modeling
 
-Latent Dirichlet Allocation (LDA) to extract underlying topics from the corpus
+Latent Dirichlet Allocation (LDA) was applied to identify hidden topics within the corpus
 
-Evaluation Metrics
+📈 Evaluation Metrics
+
+Model performance was evaluated using:
 
 Accuracy
 
@@ -57,41 +59,42 @@ Recall
 
 F1-score
 
-These metrics were used to compare model performance and ensure reliable classification results.
+These metrics ensure a balanced assessment of classification quality across categories.
 
-Results
+✅ Results
 
-The trained models achieved strong classification performance using TF-IDF features. Topic modeling revealed coherent and interpretable themes aligned with real-world news categories, validating the effectiveness of the preprocessing and feature extraction pipeline.
+TF-IDF proved to be an effective representation for news article classification
 
-Key Takeaways
+Classification models achieved strong and consistent performance
 
-TF-IDF remains a strong baseline for text classification
+Topic modeling revealed coherent themes aligned with real-world news domains
 
-Preprocessing quality significantly impacts model performance
+🧩 Key Takeaways
 
-Topic modeling adds valuable insights beyond supervised labels
+TF-IDF remains a strong baseline for NLP classification tasks
 
-Future Enhancements
+Text preprocessing significantly impacts model performance
 
-Incorporate word embeddings such as Word2Vec or GloVe
+Topic modeling adds interpretability beyond labeled data
+
+🚀 Future Enhancements
+
+Integrate word embeddings such as Word2Vec or GloVe
 
 Experiment with transformer-based models like BERT
 
-Improve topic visualization and interpretability
+Enhance topic visualization and coherence analysis
 
-Tech Stack
+🛠️ Tech Stack
 
-Python
+Programming Language: Python
 
-Pandas, NumPy
+Libraries: Pandas, NumPy, Scikit-learn
 
-Scikit-learn
+NLP Tools: NLTK / SpaCy
 
-NLTK / SpaCy
+Visualization: Matplotlib
 
-Matplotlib
+🏁 Conclusion
 
-Conclusion
-
-This project demonstrates a complete NLP workflow—from raw text preprocessing to classification and topic discovery. It highlights how machine learning can effectively extract structure and meaning from large-scale unstructured text data.
-
+This project demonstrates an end-to-end NLP workflow—from raw text preprocessing to supervised classification and unsupervised topic discovery. It highlights how machine learning can effectively extract structure and insight from large volumes of unstructured textual data in a scalable and interpretable manner.
