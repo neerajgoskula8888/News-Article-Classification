@@ -109,9 +109,8 @@ This project demonstrates an **end-to-end NLP workflow** — from raw text prepr
 
 ---
 
-## 📸 Visual Highlights (Optional for GitHub)
+## 📸 Highlights 
 
 - Confusion matrix  
 - Word clouds per topic  
 - Accuracy comparison chart for models  
-
