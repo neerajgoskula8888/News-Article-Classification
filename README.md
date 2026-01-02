@@ -1,100 +1,117 @@
-📰 News Article Classification & Topic Modeling
+# 📰 News Article Classification & Topic Modeling
 
-A Natural Language Processing Project
+A Natural Language Processing (NLP) Project
 
-📌 Overview
+---
 
-With the rapid growth of digital media, manually organizing news articles into categories has become impractical. This project applies Natural Language Processing (NLP) techniques to automatically classify news articles and uncover hidden thematic structures within large text corpora.
+## 📌 Overview
 
-In simple terms, the model learns to tell politics from sports and technology—without having to read the entire newspaper every morning.
+With the rapid growth of digital media, manually organizing news articles into categories is impractical. This project applies NLP techniques to **automatically classify news articles** and **uncover hidden thematic structures** within large text corpora.
 
-🎯 Objectives
+In simple terms, the model can learn to tell **Politics**, **Sports**, **Business**, and **Technology** apart—without reading every article manually.
 
-Automatically classify news articles into predefined categories
+---
 
-Extract latent topics to understand underlying themes in the data
+## 🎯 Objectives
 
-Compare multiple machine learning models for text classification performance
+- Automatically classify news articles into predefined categories
+- Extract latent topics to understand underlying themes in the data
+- Compare multiple machine learning models for text classification performance
 
-📊 Dataset
+---
 
-The dataset consists of thousands of news articles spanning multiple domains. Each article includes raw textual content and a corresponding label, making it suitable for both supervised classification and unsupervised topic modeling tasks.
+## 📊 Dataset
 
-🧠 Methodology
-🔹 Text Preprocessing
+The dataset consists of **thousands of news articles** across multiple domains. Each article includes:
 
-Text normalization and cleaning
+- Raw textual content  
+- A category label  
 
-Stopword removal
+This makes it suitable for **both supervised classification** and **unsupervised topic modeling** tasks.
 
-Tokenization
+---
 
-🔹 Feature Engineering
+## 🧠 Methodology
 
-TF-IDF vectorization to capture term importance across documents
+### 🔹 Text Preprocessing
+- Text normalization and cleaning
+- Stopword removal
+- Tokenization
 
-🔹 Model Training
+### 🔹 Feature Engineering
+- TF-IDF vectorization to capture term importance across documents
 
-The following models were trained and evaluated:
+### 🔹 Model Training
+- **Logistic Regression**  
+- **Naive Bayes**  
+- **Support Vector Machines (SVM)**  
 
-Logistic Regression
+### 🔹 Topic Modeling
+- **Latent Dirichlet Allocation (LDA)** applied to identify hidden topics within the corpus
+- Visualized topics with **word clouds** and **top words per topic**
 
-Naive Bayes
+---
 
-Support Vector Machines (SVM)
+## 📈 Evaluation Metrics
 
-🔹 Topic Modeling
+For classification models:
 
-Latent Dirichlet Allocation (LDA) was applied to identify hidden topics within the corpus
+- Accuracy  
+- Precision  
+- Recall  
+- F1-score  
 
-📈 Evaluation Metrics
+For topic modeling:
 
-Model performance was evaluated using:
+- Topic coherence  
+- Most frequent terms per topic  
 
-Accuracy
+---
 
-Precision
+## ✅ Results
 
-Recall
+- **TF-IDF** proved effective for classification  
+- Classification models achieved **high and consistent accuracy**  
+- Topic modeling revealed **coherent themes** aligned with real-world news domains  
+- Visualizations such as **confusion matrices** and **word clouds** improved interpretability
 
-F1-score
+---
 
-These metrics ensure a balanced assessment of classification quality across categories.
+## 🧩 Key Takeaways
 
-✅ Results
+- TF-IDF remains a **strong baseline** for NLP tasks  
+- **Text preprocessing** significantly impacts model performance  
+- Topic modeling adds **interpretability beyond labeled data**
 
-TF-IDF proved to be an effective representation for news article classification
+---
 
-Classification models achieved strong and consistent performance
+## 🚀 Future Enhancements
 
-Topic modeling revealed coherent themes aligned with real-world news domains
+- Integrate **word embeddings** such as Word2Vec or GloVe  
+- Experiment with **transformer-based models** (BERT, RoBERTa)  
+- Enhance **topic visualization** and coherence analysis  
+- Deploy as a **real-time news classification app**
 
-🧩 Key Takeaways
+---
 
-TF-IDF remains a strong baseline for NLP classification tasks
+## 🛠️ Tech Stack
 
-Text preprocessing significantly impacts model performance
+- **Programming Language:** Python  
+- **Libraries:** Pandas, NumPy, Scikit-learn  
+- **NLP Tools:** NLTK, SpaCy  
+- **Visualization:** Matplotlib, Seaborn, WordCloud  
 
-Topic modeling adds interpretability beyond labeled data
+---
 
-🚀 Future Enhancements
+## 🏁 Conclusion
 
-Integrate word embeddings such as Word2Vec or GloVe
+This project demonstrates an **end-to-end NLP workflow** — from raw text preprocessing to **supervised classification** and **unsupervised topic discovery**. It highlights how machine learning can extract **structure and insights** from large volumes of unstructured text in a **scalable** and **interpretable** manner.
 
-Experiment with transformer-based models like BERT
+---
 
-Enhance topic visualization and coherence analysis
+## 📸 Visual Highlights (Optional for GitHub)
 
-🛠️ Tech Stack
+- Confusion matrix  
+- Word clouds per topic  
+- Accuracy comparison chart for models  
 
-Programming Language: Python
-
-Libraries: Pandas, NumPy, Scikit-learn
-
-NLP Tools: NLTK / SpaCy
-
-Visualization: Matplotlib
-
-🏁 Conclusion
-
-This project demonstrates an end-to-end NLP workflow—from raw text preprocessing to supervised classification and unsupervised topic discovery. It highlights how machine learning can effectively extract structure and insight from large volumes of unstructured textual data in a scalable and interpretable manner.
